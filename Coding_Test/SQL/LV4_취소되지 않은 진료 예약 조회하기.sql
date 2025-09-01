@@ -1,0 +1,18 @@
+# 취소되지 않은 진료 예약 조회하기
+
+SELECT A.APNT_NO , P.PT_NAME , P.PT_NO, D.MCDP_CD, D.DR_NAME, A.APNT_YMD
+FROM APPOINTMENT A 
+INNER JOIN PATIENT P 
+ON A.PT_NO = P.PT_NO 
+INNER JOIN DOCTOR D 
+ON A.MDDR_ID = D.DR_ID 
+WHERE DATE_FORMAT(A.APNT_YMD,'%Y%m%d')='20220413'
+and A.MCDP_CD = 'CS'
+and A.APNT_CNCL_YN = 'N'
+ORDER BY A.APNT_YMD 
+
+/* 
+조건1 : 2022년 4월 13일 취소되지 않은 흉부외과(CS) 진료 예약 내역을 조회하는 SQL문
+
+핵심 스킬1 : DATE_FORMAT 함수를 이용해서 2022년 4월 13일 데이터만 필터링  
+*/
