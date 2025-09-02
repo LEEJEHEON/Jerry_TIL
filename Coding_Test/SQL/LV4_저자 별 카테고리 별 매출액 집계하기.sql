@@ -1,0 +1,20 @@
+# 저자 별 카테고리 별 매출액 집계하기
+
+SELECT A.AUTHOR_ID ,A.AUTHOR_NAME ,  B.CATEGORY , SUM(B.PRICE*BS.SALES)
+FROM BOOK_SALES BS
+INNER JOIN BOOK B
+ON BS.BOOK_ID = B.BOOK_ID
+INNER JOIN AUTHOR A
+ON B.AUTHOR_ID = A.AUTHOR_ID
+WHERE DATE_FORMAT(BS.SALES_DATE, '%Y-%m') ='2022-01'
+GROUP BY A.AUTHOR_ID,A.AUTHOR_NAME,B.CATEGORY
+ORDER BY A.AUTHOR_ID, B.CATEGORY DESC
+
+/* 
+조건1 : 2022년 1월의 도서 판매 데이터를 기준으로 저자 별, 카테고리 별 매출액(TOTAL_SALES = 판매량 * 판매가) 을 구하여
+, 저자 ID(AUTHOR_ID), 저자명(AUTHOR_NAME), 카테고리(CATEGORY), 매출액(SALES) 리스트를 출력하는 SQL문
+
+핵심 스킬1 : DATE_FORMAT 함수를 이용해서 2022년 1월 데이터만 필터링  
+핵심 스킬2 : SUM 함수를 이용해서 한번에 그룹별 매출액을 계산  
+
+*/
