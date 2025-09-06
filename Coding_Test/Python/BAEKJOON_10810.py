@@ -1,3 +1,5 @@
+# 공 넣기
+
 def BAEKJOON_F ():
     n, m = map(int, input().split())
     l = [0] * n
@@ -8,4 +10,4 @@ def BAEKJOON_F ():
             l[j-1] = c
     return l
 
-print(BAEKJOON_F())
+print(*BAEKJOON_F() )
