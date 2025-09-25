@@ -1,0 +1,19 @@
+# 상품을 구매한 회원 비율 구하기
+
+SELECT YEAR(OS.SALES_DATE) AS YEAR, 
+       MONTH(OS.SALES_DATE) AS MONTH ,
+       count(DISTINCT OS.USER_ID) AS PURCHASED_USERS , 
+       ROUND(COUNT(DISTINCT OS.USER_ID)/CNT,1) AS PUCHASED_RATIO
+FROM USER_INFO UI 
+INNER JOIN ONLINE_SALE OS
+ON UI.USER_ID = OS.USER_ID 
+INNER JOIN (SELECT COUNT(1) AS cnt FROM USER_INFO WHERE YEAR(JOINED)='2021') UI2
+WHERE YEAR(UI.JOINED) = '2021'
+GROUP BY YEAR, MONTH
+ORDER BY YEAR, MONTH
+
+/* 
+조건1 : 2021년에 가입한 전체 회원들 중 상품을 구매한 회원수와 상품을 구매한 회원의 비율(=2021년에 가입한 회원 중 상품을 구매한 회원수 / 2021년에 가입한 전체 회원 수)을 년, 월 별로 출력하는 SQL문
+
+핵심 스킬1 : INNER JOIN을 사용하여 전체 2021년 가입 회원 수의 COUNT만 가져옴 (UI2)
+*/
