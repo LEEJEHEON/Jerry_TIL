@@ -1,0 +1,14 @@
+# 부서별 평균 연봉 조회하기
+
+SELECT HE.DEPT_ID, HD.DEPT_NAME_EN , ROUND(AVG(SAL),0) AS AVG_SAL
+FROM HR_DEPARTMENT HD
+INNER JOIN HR_EMPLOYEES HE
+ON HD.DEPT_ID = HE.DEPT_ID 
+GROUP BY HE.DEPT_ID, HD.DEPT_NAME_EN 
+ORDER BY AVG_SAL DESC
+
+/* 
+조건1 : HR_DEPARTMENT와 HR_EMPLOYEES 테이블을 이용해 부서별 평균 연봉을 조회하려 합니다. 부서별로 부서 ID, 영문 부서명, 평균 연봉을 조회하는 SQL문
+
+핵심 스킬1 : ROUND 이용해서 평균 연봉의 반올림 
+*/
