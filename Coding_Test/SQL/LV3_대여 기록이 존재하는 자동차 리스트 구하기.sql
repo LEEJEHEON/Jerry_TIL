@@ -1,0 +1,16 @@
+# 대여 기록이 존재하는 자동차 리스트 구하기
+
+SELECT DISTINCT R.CAR_ID AS CAR_ID 
+FROM CAR_RENTAL_COMPANY_CAR R
+INNER JOIN CAR_RENTAL_COMPANY_RENTAL_HISTORY H
+ON R.CAR_ID = H.CAR_ID 
+WHERE R.CAR_TYPE = '세단'
+AND MONTH(H.START_DATE) = '10'
+ORDER BY R.CAR_ID DESC 
+
+/* 
+조건1 : CAR_RENTAL_COMPANY_CAR 테이블과 CAR_RENTAL_COMPANY_RENTAL_HISTORY 테이블에서 자동차 종류가 '세단'인 자동차들 중 10월에 대여를 시작한 기록이 있는 자동차 ID 리스트를 출력하는 SQL문
+
+핵심 스킬1 : MONTH 함수를 이용해서 10월 데이터만 필터링
+
+*/
