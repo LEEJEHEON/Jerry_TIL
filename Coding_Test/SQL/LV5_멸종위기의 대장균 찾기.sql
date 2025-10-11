@@ -1,0 +1,28 @@
+# 멸종위기의 대장균 찾기
+
+-- 재귀 cte 사용 (세대를 돌면서 1씩 증가)
+WITH RECURSIVE GENERATION as (
+SELECT ID, PARENT_ID, 1 AS GENERATION
+FROM ECOLI_DATA 
+WHERE PARENT_ID IS NULL
+UNION ALL
+SELECT E.ID, E.PARENT_ID, G.GENERATION+1 AS GENERATION
+FROM ECOLI_DATA E
+INNER JOIN GENERATION G 
+ON E.PARENT_ID = G.ID 
+) 
+SELECT COUNT(P.ID) AS COUNT, GENERATION
+FROM GENERATION P
+WHERE P.ID NOT IN (SELECT S.PARENT_ID FROM ECOLI_DATA S WHERE S.PARENT_ID IS NOT NULL) -- 자식이 없는 대장균 찾기
+GROUP BY GENERATION
+ORDER BY GENERATION
+
+/* 
+조건1 : 각 세대별 자식이 없는 개체의 수(COUNT)와 세대(GENERATION)를 출력하는 SQL문
+
+핵심 스킬1 : 재귀 cte 사용 (세대를 돌면서 1씩 증가)
+핵심 스킬2 : NOT IN 을 통해 자식이 없는 대장균 찾기
+
+※ DENCE_RANK() 함수를 사용하여 세대를 구할 수도 있으나, 재귀 cte 사용이 더 직관적이고 확장성이 좋음
+
+*/
