@@ -1,0 +1,13 @@
+# 있었는데요 없었습니다
+
+SELECT AI.ANIMAL_ID, AI.NAME
+FROM ANIMAL_INS AI
+INNER JOIN ANIMAL_OUTS AO
+ON AI.ANIMAL_ID = AO.ANIMAL_ID 
+WHERE AO.DATETIME < AI.DATETIME
+ORDER BY AI.DATETIME 
+
+/* 
+조건1 : 보호 시작일보다 입양일이 더 빠른 동물의 아이디와 이름을 조회하는 SQL문을 작성
+
+*/
