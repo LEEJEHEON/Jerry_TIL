@@ -3,21 +3,40 @@ Today I Learned > 자유주제로 하여 하루마다 공부한 내용 기록
 
 
 ## 코딩 테스트 - Python
-- [BAEKJOON 1008](./Coding_Test/Python/BAEKJOON/BAEKJOON_1008.py)
-- [BAEKJOON 10171](./Coding_Test/Python/BAEKJOON/BAEKJOON_10171.py)
-- [BAEKJOON 10810](./Coding_Test/Python/BAEKJOON/BAEKJOON_10810.py)
-- [BAEKJOON 10950](./Coding_Test/Python/BAEKJOON/BAEKJOON_10950.py)
-- [BAEKJOON 10951](./Coding_Test/Python/BAEKJOON/BAEKJOON_10951.py)
-- [BAEKJOON 10998](./Coding_Test/Python/BAEKJOON/BAEKJOON_10998.py)
-- [BAEKJOON 11047](./Coding_Test/Python/BAEKJOON/BAEKJOON_11047.py)
-- [BAEKJOON 1463](./Coding_Test/Python/BAEKJOON/BAEKJOON_1463.py)
-- [BAEKJOON 15552](./Coding_Test/Python/BAEKJOON/BAEKJOON_15552.py)
-- [BAEKJOON 2480](./Coding_Test/Python/BAEKJOON/BAEKJOON_2480.py)
-- [BAEKJOON 2525](./Coding_Test/Python/BAEKJOON/BAEKJOON_2525.py)
-- [BAEKJOON 25304](./Coding_Test/Python/BAEKJOON/BAEKJOON_25304.py)
-- [BAEKJOON 5585](./Coding_Test/Python/BAEKJOON/BAEKJOON_5585.py)
-- [BAEKJOON 8393](./Coding_Test/Python/BAEKJOON/BAEKJOON_8393.py)
-- [test.py](./Coding_Test/Python/test.py)
+
+### BAEKJOON
+- [BAEKJOON 1008](./Coding_Test/PYTHON/BAEKJOON/BAEKJOON_1008.py)
+- [BAEKJOON 10171](./Coding_Test/PYTHON/BAEKJOON/BAEKJOON_10171.py)
+- [BAEKJOON 10810](./Coding_Test/PYTHON/BAEKJOON/BAEKJOON_10810.py)
+- [BAEKJOON 10950](./Coding_Test/PYTHON/BAEKJOON/BAEKJOON_10950.py)
+- [BAEKJOON 10951](./Coding_Test/PYTHON/BAEKJOON/BAEKJOON_10951.py)
+- [BAEKJOON 10998](./Coding_Test/PYTHON/BAEKJOON/BAEKJOON_10998.py)
+- [BAEKJOON 11047](./Coding_Test/PYTHON/BAEKJOON/BAEKJOON_11047.py)
+- [BAEKJOON 1463](./Coding_Test/PYTHON/BAEKJOON/BAEKJOON_1463.py)
+- [BAEKJOON 15552](./Coding_Test/PYTHON/BAEKJOON/BAEKJOON_15552.py)
+- [BAEKJOON 2480](./Coding_Test/PYTHON/BAEKJOON/BAEKJOON_2480.py)
+- [BAEKJOON 2525](./Coding_Test/PYTHON/BAEKJOON/BAEKJOON_2525.py)
+- [BAEKJOON 25304](./Coding_Test/PYTHON/BAEKJOON/BAEKJOON_25304.py)
+- [BAEKJOON 5585](./Coding_Test/PYTHON/BAEKJOON/BAEKJOON_5585.py)
+- [BAEKJOON 8393](./Coding_Test/PYTHON/BAEKJOON/BAEKJOON_8393.py)
+
+### 프로그래머스
+- [LV0 OX퀴즈](./Coding_Test/PYTHON/Programmerces/LV0_OX퀴즈.py)
+- [LV0 문자열밀기](./Coding_Test/PYTHON/Programmerces/LV0_문자열밀기.py)
+- [LV0 안전지대](./Coding_Test/PYTHON/Programmerces/LV0_안전지대.py)
+- [LV0 종이자르기](./Coding_Test/PYTHON/Programmerces/LV0_종이자르기.py)
+- [LV0 주사위게임3](./Coding_Test/PYTHON/Programmerces/LV0_주사위게임3.py)
+- [LV1 없는 숫자 더하기](./Coding_Test/PYTHON/Programmerces/LV1_없는%20숫자%20더하기.py)
+- [LV2 가장 큰 수](./Coding_Test/PYTHON/Programmerces/LV2_가장%20큰%20수.py)
+- [LV2 다리를 지나는 트럭](./Coding_Test/PYTHON/Programmerces/LV2_다리를%20지나는%20트럭.py)
+- [LV2 소수 찾기](./Coding_Test/PYTHON/Programmerces/LV2_소수%20찾기.py)
+- [LV2 숫자의 표현](./Coding_Test/PYTHON/Programmerces/LV2_숫자의%20표현.py)
+- [LV2 올바른 괄호](./Coding_Test/PYTHON/Programmerces/LV2_올바른%20괄호.py)
+- [LV2 프로세스](./Coding_Test/PYTHON/Programmerces/LV2_프로세스.py)
+
+### 기타
+- [test.py](./Coding_Test/PYTHON/test.py)
+- [test2.py](./Coding_Test/PYTHON/test2.py)
 
 ## 코딩 테스트 - SQL (프로그래머스)
 - [LV3 대여 기록이 존재하는 자동차 리스트 구하기](./Coding_Test/SQL/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/LV3_%EB%8C%80%EC%97%AC%20%EA%B8%B0%EB%A1%9D%EC%9D%B4%20%EC%A1%B4%EC%9E%AC%ED%95%98%EB%8A%94%20%EC%9E%90%EB%8F%99%EC%B0%A8%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%20%EA%B5%AC%ED%95%98%EA%B8%B0.sql)
