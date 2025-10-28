@@ -1,0 +1,17 @@
+# 물고기 종류 별 대어 찾기
+
+SELECT A.ID , A.FISH_NAME, A.LENGTH
+FROM (
+SELECT F.ID , FN.FISH_NAME , F.LENGTH ,ROW_NUMBER() OVER(PARTITION BY F.FISH_TYPE ORDER BY F.LENGTH DESC ) AS RN 
+FROM FISH_INFO F 
+INNER JOIN FISH_NAME_INFO FN
+ON F.FISH_TYPE = FN.FISH_TYPE 
+) A
+WHERE A.RN= 1 
+ORDER BY A.ID
+
+/* 
+조건1 : 물고기 종류 별로 가장 큰 물고기의 ID, 물고기 이름, 길이를 출력하는 SQL 문
+
+핵심 스킬1 : ROW_NUMBER 이용하여 제일 큰 값을 가져옴 
+*/
