@@ -39,9 +39,6 @@ Today I Learned > 자유주제로 하여 하루마다 공부한 내용 기록
 - [LV2 프로세스](./Coding_Test/PYTHON/Programmerces/LV2_프로세스.py)
 - [LV2 피보나치 수](./Coding_Test/PYTHON/Programmerces/LV2_피보나치%20수.py)
 
-### 기타
-- [test.py](./Coding_Test/PYTHON/test.py)
-- [test2.py](./Coding_Test/PYTHON/test2.py)
 
 ## 코딩 테스트 - SQL (프로그래머스)
 - [LV3 대여 기록이 존재하는 자동차 리스트 구하기](./Coding_Test/SQL/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/LV3_%EB%8C%80%EC%97%AC%20%EA%B8%B0%EB%A1%9D%EC%9D%B4%20%EC%A1%B4%EC%9E%AC%ED%95%98%EB%8A%94%20%EC%9E%90%EB%8F%99%EC%B0%A8%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%20%EA%B5%AC%ED%95%98%EA%B8%B0.sql)
