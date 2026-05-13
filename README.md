@@ -107,6 +107,7 @@ Today I Learned > 자유주제로 하여 하루마다 공부한 내용 기록
 ## String
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/LEEJEHEON/Jerry_TIL/tree/master/0020-valid-parentheses) |
 | [0125-valid-palindrome](https://github.com/LEEJEHEON/Jerry_TIL/tree/master/0125-valid-palindrome) |
 | [0242-valid-anagram](https://github.com/LEEJEHEON/Jerry_TIL/tree/master/0242-valid-anagram) |
 ## Hash Table
@@ -117,4 +118,8 @@ Today I Learned > 자유주제로 하여 하루마다 공부한 내용 기록
 |  |
 | ------- |
 | [0242-valid-anagram](https://github.com/LEEJEHEON/Jerry_TIL/tree/master/0242-valid-anagram) |
+## Stack
+|  |
+| ------- |
+| [0020-valid-parentheses](https://github.com/LEEJEHEON/Jerry_TIL/tree/master/0020-valid-parentheses) |
 <!---LeetCode Topics End-->
